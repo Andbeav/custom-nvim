@@ -16,7 +16,7 @@ return {
     branch = "v3.x",
     dependencies = {
       "nvim-lua/plenary.nvim",
-      -- "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
       "MunifTanjim/nui.nvim",
       -- {"3rd/image.nvim", opts = {}}, -- Optional image support in preview window: See `# Preview Mode` for more information
       {
@@ -102,7 +102,7 @@ return {
           icon = {
             folder_closed = ">",
             folder_open = "v",
-            folder_empty = ")",
+            folder_empty = "-",
             -- provider = function(icon, node, state) -- default icon provider utilizes nvim-web-devicons if available
             --   if node.type == "file" or node.type == "terminal" then
             --     local success, web_devicons = pcall(require, "nvim-web-devicons")

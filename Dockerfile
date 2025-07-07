@@ -12,6 +12,7 @@ FROM rust:alpine3.22 as rust
 ARG SHARED_PACKAGES
 
 RUN apk update && apk add ${SHARED_PACKAGES}
+RUN rustup toolchain install stable
 
 COPY --from=configure /root/.config/ /root/.config/
 
