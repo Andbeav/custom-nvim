@@ -23,7 +23,7 @@ WORKDIR /wd
 ENTRYPOINT [ "/bin/sh" ]
 
 # Ruby
-FROM ruby:3.4.6-alpine3.22 as ruby
+FROM ruby:3.4.7-alpine3.22 as ruby
 
 ARG SHARED_PACKAGES
 
