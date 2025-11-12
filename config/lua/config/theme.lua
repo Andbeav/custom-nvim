@@ -1,15 +1,14 @@
+vim.opt.number = true
 vim.cmd("colorscheme unokai")
-vim.cmd("set number")
 vim.cmd("hi! VertSplit guibg=NONE")
 
-local hl_groups = {
+local highlight_groups = {
   'DiagnosticUnderlineInfo',
   'DiagnosticUnderlineWarn',
   'DiagnosticUnderlineError',
-
 }
-for _, hl in ipairs(hl_groups) do
-  vim.cmd.highlight(hl .. ' gui=undercurl')
+for _, highlight in ipairs(highlight_groups) do
+  vim.cmd.highlight(highlight .. ' gui=undercurl')
 end
 
 vim.cmd("Neotree")
